@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#152a35"><meta name="description" content="Không gian tự học Toán và Vật lí. Luyện từng bước, ôn kiến thức và hiểu bản chất.">
+  <title>Hiểu Sâu — Toán & Vật lí</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Đến nội dung</a>
+  <aside class="sidebar">
+    <a href="#library" class="brand"><span class="brand-mark">h<span>•</span></span><div>hiểu sâu<small>KHÔNG GIAN TỰ HỌC</small></div></a>
+    <div class="sidebar-label">MÔN HỌC CỦA BẠN</div>
+    <div class="subject-picker" role="group" aria-label="Chọn môn"><button data-subject="physics">⚛ <span>Vật lí</span></button><button data-subject="math">ƒ <span>Toán</span></button></div>
+    <div class="sidebar-label">GÓC HỌC TẬP</div>
+    <nav aria-label="Điều hướng chính"><a href="#library" data-nav="library"><span>▦</span> Kho bài tập <b id="library-count"></b></a><a href="#exams" data-nav="exams"><span>▤</span> Ngân hàng đề</a><a href="#knowledge" data-nav="knowledge"><span>◈</span> Ôn kiến thức</a><a href="#review" data-nav="review"><span>↺</span> Cần luyện lại <b id="review-count"></b></a></nav>
+    <div class="side-note"><div class="mini-orbit">✦</div><strong>Hiểu vì sao.<br>Không chỉ biết đáp án.</strong><p>Cứ đi từng bước, theo nhịp của bạn.</p></div>
+    <div class="data-tools"><button id="export-data">↓ Sao lưu</button><button id="import-data">↑ Khôi phục</button><input type="file" id="import-file" accept="application/json" hidden></div>
+    <div class="local-note"><i></i> Lưu trên trình duyệt này</div>
+  </aside>
+  <div class="workspace"><header class="topbar"><div><span class="breadcrumb">Góc học tập</span><span class="slash">/</span><span id="breadcrumb">Kho bài tập</span></div><div class="top-right"><span class="quiet-label">Mỗi bước nhỏ, hiểu thêm một chút</span><span class="avatar">B</span></div></header><main id="main" tabindex="-1"></main><footer>Hiểu Sâu <span>•</span> Học theo cách của bạn.</footer></div>
+  <dialog id="modal" aria-labelledby="modal-title"><div id="modal-body"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="app.mjs"></script>
+</body></html>
